@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//WebRoot/alert/alert_collect.html=UTF-8
+encoding//WebRoot/alert/alert_delete_note.html=UTF-8
+encoding//WebRoot/alert/alert_delete_notebook.html=UTF-8
+encoding//WebRoot/alert/alert_delete_rollback.html=UTF-8
+encoding//WebRoot/alert/alert_like.html=UTF-8
+encoding//WebRoot/alert/alert_note.html=UTF-8
+encoding//WebRoot/alert/alert_notebook.html=UTF-8
+encoding//WebRoot/alert/alert_rename.html=UTF-8
+encoding//WebRoot/alert/alert_replay.html=UTF-8
+encoding//WebRoot/scripts/note.js=UTF-8
+encoding//WebRoot/scripts/recycle.js=UTF-8
+encoding//WebRoot/scripts/share.js=UTF-8

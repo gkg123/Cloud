@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="org.oracle.note.dao.UserDao">
+
+	<select id="findByName" resultType="org.oracle.note.entity.User" parameterType="string">
+		select * from cn_user where cn_user_name=#{name}
+	
+	</select>
+	<update id="updatePassword" parameterType="org.oracle.note.entity.User" >
+		
+	update cn_user set cn_user_password=#{cn_user_password} where cn_user_name=#{cn_user_name}
+	
+	</update>
+	
+	<select id="findBypwd" parameterType="org.oracle.note.entity.User" resultType="string">
+	select cn_user_name from cn_user where cn_user_password=#{cn_user_password} and cn_user_id=#{cn_user_id}
+	
+	</select>
+	<insert id="register" parameterType="org.oracle.note.entity.User">
+		insert into cn_user values(#{cn_user_id},#{cn_user_name},#{cn_user_password},default,#{cn_user_nick})
+	</insert>
+	
+
+
+</mapper>
